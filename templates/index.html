@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+{% load core_tags %}<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="http://example.com/myicon.ico" />
     <title>Старт</title>
 </head>
 <body>
-    Стартовая траница
+    {% block first %}
+        {% start_string 'reports' %}
+    {% endblock %}
 </body>
 </html>
